@@ -793,125 +793,94 @@
         </section>
 
         <!-- Localizacion mapa -->
-        <section class="flex-shrink-0 relative flex items-end md:items-center min-h-[80vh] md:min-h-[50vh]"
-          style="background-color: rgb(34, 34, 34)">
-          <div class="absolute inset-0 w-full h-full leaflet-container leaflet-touch leaflet-fade-anim"
-            id="map-1685252335745-453" tabindex="0">
-            <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px)">
-              <div class="leaflet-pane leaflet-tile-pane">
-                <div class="leaflet-layer" style="z-index: 1">
-                  <div class="leaflet-tile-container leaflet-zoom-animated" style="
-                        z-index: 18;
-                        transform: translate3d(0px, 0px, 0px) scale(1);
-                      "></div>
-                </div>
-                <div class="leaflet-layer" style="z-index: 1; opacity: 1">
-                  <div class="leaflet-tile-container leaflet-zoom-animated" style="
-                        z-index: 18;
-                        transform: translate3d(0px, 0px, 0px) scale(1);
-                      ">
-
+        <section class="flex-shrink-0" style="background-color: rgb(34, 51, 51);">
+          <div class="container mx-auto py-12 lg:py-14 xl:py-20">
+            <div class="flex flex-col w-full gap-10 lg:gap-20 lg:!flex-row-reverse">
+              <div class="w-full md:w-1/2">
+                <div
+                  class="w-full mt-4 h-40 md:h-72 lg:h-96 z-5 rounded-sm leaflet-container leaflet-touch leaflet-fade-anim"
+                  id="map-1685423306726-158" tabindex="0" style="position: relative;">
+                  <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="leaflet-pane leaflet-tile-pane">
+                      <div class="leaflet-layer " style="z-index: 1;">
+                        <div class="leaflet-tile-container leaflet-zoom-animated"
+                          style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"></div>
+                      </div>
+                      <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                        <div class="leaflet-tile-container leaflet-zoom-animated"
+                          style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);">
+                          <img alt="" role="presentation"
+                            src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/08/Google-Maps.jpeg?fit=950%2C475&quality=50&strip=all&ssl=1"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: auto; height: auto; transform: translate3d(-50px, 10px, 0px); opacity: 1;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="leaflet-pane leaflet-shadow-pane"></div>
+                    <div class="leaflet-pane leaflet-overlay-pane"></div>
+                    <!-- <div class="leaflet-pane leaflet-marker-pane"><img
+                        src="https://api.mapbox.com/v4/marker/pin-m+da280f.png?access_token=pk.eyJ1IjoiZHVyYWJsZSIsImEiOiJjbGJjOHV1bHUwcjM5M3huOHdoZXdkdDRsIn0.geBkTZ4KBXWb669GQBr8rw"
+                        class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0"
+                        style="margin-left: -15px; margin-top: -35px; width: 40px; height: 70px; transform: translate3d(288px, 192px, 0px); z-index: 192;">
+                    </div> -->
+                    <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                    <div class="leaflet-pane leaflet-popup-pane"></div>
+                    <div class="leaflet-proxy leaflet-zoom-animated"
+                      style="transform: translate3d(70px, -25px, 0px) scale(65536);"></div>
+                  </div>
+                  <div class="leaflet-control-container">
+                    <!-- <div class="leaflet-top leaflet-left">
+                      <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in"
+                          href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a
+                          class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                          aria-label="Zoom out">−</a></div>
+                    </div> -->
+                    <!-- <div class="leaflet-top leaflet-right">
+                      <div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a
+                          class="close" href="#" title="close">close</a>
+                        <div class="map-tooltip-content"></div>
+                      </div>
+                    </div> -->
+                    <!-- <div class="leaflet-bottom leaflet-left">
+                      <div class="mapbox-logo leaflet-control mapbox-logo-true"></div>
+                    </div>
+                    <div class="leaflet-bottom leaflet-right">
+                      <div class="map-legends wax-legends leaflet-control" style="display: none;"></div>
+                      <div class="leaflet-control-attribution leaflet-control leaflet-compact-attribution"><a
+                          href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox">© Mapbox</a> <a
+                          href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap">©
+                          OpenStreetMap</a> <a class="mapbox-improve-map"
+                          href="https://www.mapbox.com/contribute/#/-102.553/23.635/17" target="_blank"
+                          title="Improve this map">Improve this map</a></div>
+                    </div> -->
                   </div>
                 </div>
               </div>
-              <div class="leaflet-pane leaflet-shadow-pane"></div>
-              <div class="leaflet-pane leaflet-overlay-pane"></div>
-              <div class="leaflet-pane leaflet-marker-pane">
-                <!-- Icono puntero mapa -->
-                <!-- <img
-                    src="https://api.mapbox.com/v4/marker/pin-m+6A8EAE.png?access_token=pk.eyJ1IjoiZHVyYWJsZSIsImEiOiJjbGJjOHV1bHUwcjM5M3huOHdoZXdkdDRsIn0.geBkTZ4KBXWb669GQBr8rw"
-                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
-                    alt=""
-                    tabindex="0"
-                    style="
-                      margin-left: -15px;
-                      margin-top: -35px;
-                      width: 30px;
-                      height: 70px;
-                      transform: translate3d(672px, 162px, 0px);
-                      z-index: 162;
-                    "
-                  /> -->
-              </div>
-              <div class="leaflet-pane leaflet-tooltip-pane"></div>
-              <div class="leaflet-pane leaflet-popup-pane"></div>
-              <div class="leaflet-proxy leaflet-zoom-animated" style="
-                    transform: translate3d(7.2186e6px, 1.45091e7px, 0px)
-                      scale(65536);
-                  "></div>
-            </div>
-            <div class="leaflet-control-container">
-              <!-- Icon Zoom In Out -->
-              <!-- <div class="leaflet-top leaflet-left">
-                  <div class="leaflet-control-zoom leaflet-bar leaflet-control">
-                    <a
-                      class="leaflet-control-zoom-in"
-                      href="#"
-                      title="Zoom in"
-                      role="button"
-                      aria-label="Zoom in"
-                      >+</a
-                    ><a
-                      class="leaflet-control-zoom-out"
-                      href="#"
-                      title="Zoom out"
-                      role="button"
-                      aria-label="Zoom out"
-                      >−</a
-                    >
-                  </div>
-                </div> -->
-              <div class="leaflet-top leaflet-right">
-                <div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none">
-                  <a class="close" href="#" title="close">close</a>
-                  <div class="map-tooltip-content"></div>
-                </div>
-              </div>
-              <div class="leaflet-bottom leaflet-left">
-                <!-- <div
-                    class="mapbox-logo leaflet-control mapbox-logo-true"
-                  ></div> -->
-              </div>
-              <div class="leaflet-bottom leaflet-right">
-                <div class="map-legends wax-legends leaflet-control" style="display: none"></div>
-                <div class="leaflet-control-attribution leaflet-control">
-                  <a href="https://www.google.com.mx/maps" target="_blank" title="Mapbox">© Google Maps</a>
-                  <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap">©
-                    OpenStreetMap</a>
-                  <a class="mapbox-improve-map" href="https://www.mapbox.com/contribute/#/-102.553/23.635/17"
-                    target="_blank" title="Improve this map">Improve this map</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="relative z-10 container mx-auto py-12 lg:py-14 xl:py-20">
-            <div class="flex flex-row w-full md:flex-row-reverse">
-              <div class="w-full md:w-1/2 xl:w-2/5 flex flex-col gap-6 p-6 lg:p-10 shadow"
-                style="background-color: rgba(34, 34, 34, 0.974)">
+              <div class="w-full md:w-1/2 flex flex-col gap-6 lg:mt-10">
                 <div>
-                  <p class="heading-medium mb-4" style="
-                        color: rgb(145, 112, 112);
-                        font-family: Arvo, serif;
-                        font-weight: 400;
-                      ">
-                    Localizacion:
+                  <p class="heading-medium mb-4"
+                    style="color: rgb(255, 255, 255); font-family: Work Sans, sans-serif; font-weight: 500;">Location
                   </p>
+                  <pre class="body-normal"
+                    style="color: rgb(255, 255, 255); font-family:Open Sans, sans-serif; font-weight: 400;">Mexico</pre>
                   <pre class="body-normal" style="
-                        color: rgb(255, 255, 255);
-                        font-family: Lato, sans-serif;
-                        font-weight: 400;
-                      ">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas enim qui vel distinctio eius quis eum, aliquid nemo reprehenderit ut corporis sed <a
+                  color: rgb(255, 255, 255);
+                  font-family: Lato, sans-serif;
+                  font-weight: 400;
+                ">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas enim qui vel distinctio eius quis eum, aliquid nemo reprehenderit ut corporis sed 
+<a
 class="button primary xl mt-6 lg:mt-8 w-full md:w-max"
 target="_blank"
 href="https://www.google.com.mx/maps"
 style="
-  background: rgb(167, 212, 234);
-  border-radius: 8px;
-  color: rgb(17, 24, 39);
-  border: 2px solid rgb(167, 212, 234);
+background: rgb(167, 212, 234);
+border-radius: 8px;
+color: rgb(17, 24, 39);
+border: 2px solid rgb(167, 212, 234);
 "
 >Ir a google maps</a </pre>
+
                 </div>
               </div>
             </div>
@@ -919,6 +888,9 @@ style="
         </section>
 
 
+
+
+        <!-- Contacto -->
         <section id="contacto" class="flex-shrink-0" style="background-color: rgb(51, 51, 51)">
           <div class="container mx-auto py-12 lg:py-14 xl:py-20">
             <div class="flex flex-col w-full gap-10 lg:gap-20 lg:flex-row">
@@ -1028,7 +1000,8 @@ style="
             </div>
             <div class="flex flex-col gap-12 lg:gap-6">
               <div class="flex flex-col lg:flex-row gap-12 lg:items-center lg:justify-end">
-                <ul class="flex flex-col lg:flex-row items-start lg:items-center flex-wrap gap-6" style="color:rgb(251, 251, 253)">
+                <ul class="flex flex-col lg:flex-row items-start lg:items-center flex-wrap gap-6"
+                  style="color:rgb(251, 251, 253)">
                   <li class="border-b-2" style="border-color:transparent"><a class="block py-1.5 body-normal"
                       href="/">Inicio</a></li>
                 </ul>
@@ -1078,8 +1051,8 @@ style="
                 </ul>
               </div>
               <p class="body-normal lg:text-right whitespace-nowrap"><span>Made with&nbsp;</span><a target="_blank"
-                  class="underline" style="color:rgb(251, 251, 253)"
-                  href="https://my-portfolio-jerp.vercel.app/">Jose Eduardo Roman</a></p>
+                  class="underline" style="color:rgb(251, 251, 253)" href="https://my-portfolio-jerp.vercel.app/">Jose
+                  Eduardo Roman</a></p>
             </div>
           </div>
         </div>
