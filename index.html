@@ -40,7 +40,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta name="theme-color" content="#111111" />
   <link rel="icon" href="/image/icon.svg" />
   <title>Landing Page</title>
@@ -72,6 +72,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Arvo:wght@400&amp;family=Lato:wght@400&amp;display=swap" />
 </head>
+
+
 
 <body>
   <div id="__next" data-reactroot="">
@@ -137,9 +139,41 @@
                     " href="#contacto">Contacto</a>
               </div>
             </div>
+
+            <style>
+              .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+              }
+              
+              .modal {
+                display: none;
+                position:fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 20px;
+                width: 300px;
+                max-width: 90%;
+                z-index: 10000;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+              }
+              
+              .modal.visible {
+                display: block;
+              }
+            </style>
+            
             <div class="ml-auto lg:hidden">
               <button class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
-                style="color: rgb(255, 255, 255)">
+                style="color: rgb(255, 255, 255)" onclick="toggleMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
                   height="24" class="block h-5 w-5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
@@ -147,6 +181,33 @@
                 </svg>
               </button>
             </div>
+            
+            <div id="overlay" class="overlay"></div>
+            
+            <div id="modal" class="modal">
+              <nav>
+                <!-- Contenido del menú de navegación -->
+                <ul style="list-style: none; padding: 0; text-align: center;">
+                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Inicio</a></li>
+                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Acerca de</a></li>
+                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Servicios</a></li>
+                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Contacto</a></li>
+                </ul>
+              </nav>
+            </div>
+            
+            <script>
+              function toggleMenu() {
+                var overlay = document.getElementById("overlay");
+                var modal = document.getElementById("modal");
+                overlay.classList.toggle("visible");
+                modal.classList.toggle("visible");
+              }
+            </script>
+            
+            
+            
+            
           </div>
         </div>
       </header>
@@ -158,12 +219,13 @@
             height: 0;
             padding: 0;
             margin: -1px;
-            overflow: hidden;
+            overflow:visible;
             clip: rect(0, 0, 0, 0);
             white-space: nowrap;
             border-width: 0;
             display: none;
-          "></div>
+          ">
+          </div>
       <div class="overflow-x-hidden">
 
         <!-- Introduccion -->
