@@ -2,22 +2,25 @@ $(document).ready(main);
 
 var contador = 1;
 
-function main(){
-	$('.menu_bar').click(function(){
-		// $('nav').toggle(); 
+function main() {
+  $('.menu_bar').click(function () {
+    if (contador == 1) {
+      $('nav').animate({
+        left: '0'
+      });
+      contador = 0;
+    } else {
+      contador = 1;
+      $('nav').animate({
+        left: '-100%'
+      });
+    }
+  });
 
-		if(contador == 1){
-			$('nav').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador = 1;
-			$('nav').animate({
-				left: '-100%'
-			});
-		}
-
-	});
-
-};
+  $('nav ul li a').click(function () {
+    $('nav').animate({
+      left: '-100%'
+    });
+    contador = 1;
+  });
+}
