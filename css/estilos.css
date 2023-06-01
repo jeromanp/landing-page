@@ -15,7 +15,7 @@ header nav {
 	width:90%;
 	max-width:1000px;
 	margin:20px auto;
-	background:#111827;
+	background:rgb(17, 17, 17);
 }
 
 .menu_bar {
@@ -43,7 +43,7 @@ header nav ul li a {
 } */
 
 header nav ul li a:hover {
-	background:#2B3B4E;
+	background: rgb(34, 51, 51);
 }
 
 /* section {
@@ -64,6 +64,8 @@ header nav ul li a:hover {
 		display:block;
 		float:none;
 		border-bottom:1px solid rgba(255,255,255, .3);
+		font: size 15px;
+
 	}
 
 	.menu_bar {
@@ -74,12 +76,12 @@ header nav ul li a:hover {
 
 	.menu_bar .bt-menu {
 		display:block;
-		padding:20px;
-		background:#111827;
+		padding: 5px;
+		background: rgb(17, 17, 17);
 		color:#fff;
 		text-decoration:none;
 		font-weight: bold;
-		font-size:25px;
+		font-size:20px;
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
