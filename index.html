@@ -87,8 +87,6 @@
     href="https://fonts.googleapis.com/css2?family=Arvo:wght@400&amp;family=Lato:wght@400&amp;display=swap" />
 </head>
 
-
-
 <body>
   <div id="__next" data-reactroot="">
     <div class="min-h-full w-full flex flex-col smooth-scroll"
@@ -152,84 +150,9 @@
                       border: 2px solid #a7d4ea;
                     " href="#contacto">Contacto</a>
               </div>
-            </div>
-
-
-
-
-            <!-- <style>
-              .overlay {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 9999;
-              }
-              
-              .modal {
-                display: none;
-                position:fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: #fff;
-                padding: 20px;
-                width: 300px;
-                max-width: 90%;
-                z-index: 10000;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-              }
-              
-              .modal.visible {
-                display: block;
-              }
-            </style>
-            
-            <div class="ml-auto lg:hidden">
-              <button class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
-                style="color: rgb(255, 255, 255)" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                  height="24" class="block h-5 w-5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
-                  </path>
-                </svg>
-              </button>
-            </div>
-            
-            <div id="overlay" class="overlay"></div>
-            
-            <div id="modal" class="modal">
-              <nav>
-                Contenido del menú de navegación -->
-                <!-- <ul style="list-style: none; padding: 0; text-align: center;">
-                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Inicio</a></li>
-                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Acerca de</a></li>
-                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Servicios</a></li>
-                  <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #0a0a0a; text-decoration: none; font-size: 1.5rem;">Contacto</a></li>
-                </ul> -->
-              <!-- </nav> -->
-            <!-- </div> -->
-            
-            <!-- <script>
-              function toggleMenu() {
-                var overlay = document.getElementById("overlay");
-                var modal = document.getElementById("modal");
-                overlay.classList.toggle("visible");
-                modal.classList.toggle("visible");
-              }
-            </script> -->
-          
-            
-            
-            
-            
+            </div> 
           </div>
-        </div>
-
-                       
+        </div>                       
         
         <!-- NavBar -->
         <div class="menu_bar">
@@ -243,15 +166,14 @@
           </a>
         </div>
 
-
         <nav style="width: 46%;height: auto; max-width: 1000px; margin: 5px auto; ; align-self: center;">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Localización</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#introduccion">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#localizacion">Localización</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
         
@@ -277,7 +199,7 @@
       <div class="overflow-x-hidden">
 
         <!-- Introduccion -->
-        <section class="flex-shrink-0 relative flex items-center min-h-120"
+        <section id="introduccion" class="flex-shrink-0 relative flex items-center min-h-120"
           style="background-image: url(&quot;https://images.unsplash.com/photo-1649642828190-d6f6f71702d6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wyNjI5NjF8MHwxfHNlYXJjaHwyMnx8UmVjcnVpdGluZ3xlbnwwfHx8fDE2ODUzMDIzNjN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&quot;); background-position: center center; background-size: cover;">
           <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.7);"></div>
           <div class="relative container mx-auto px-6 z-10 py-12 lg:py-32 xl:py-40 text-8xl">
@@ -349,7 +271,7 @@
         </section>
 
         <!-- Acerca de negocio -->
-        <section class="flex-shrink-0" style="background-color: rgb(34, 34, 34)">
+        <section id="nosotros" class="flex-shrink-0" style="background-color: rgb(34, 34, 34)">
           <div class="container mx-auto py-12 lg:py-14 xl:py-20">
             <div class="rich-text-block max-w-5xl text-right ml-auto mr-0" style="color: rgb(255, 255, 255)">
               <h3 style="white-space: pre-line; text-align: start;">
@@ -366,7 +288,7 @@
         </section>
 
         <!-- Nuestros productos/servicios -->
-        <section class="flex-shrink-0" style="background-color: rgb(34, 51, 51);">
+        <section id="servicios" class="flex-shrink-0" style="background-color: rgb(34, 51, 51);">
           <div class="container mx-auto py-12 lg:py-14 xl:py-20">
             <h2 class="heading-large mb-6 text-left"
               style="color: rgb(255, 255, 255); font-family: Work Sans, sans-serif; font-weight: 500;">
@@ -462,7 +384,6 @@
                 </div>
               </div>
               <div class="block-list-item w-full">
-
         </section>
 
         <!-- <section
@@ -558,7 +479,7 @@
           </section> -->
 
         <!-- Galery -->
-        <section class="flex-shrink-0" style="background-color: rgb(34, 34, 34);">
+        <section id="galeria" class="flex-shrink-0" style="background-color: rgb(34, 34, 34);">
           <div class="py-12 lg:py-14 xl:py-20">
             <div class="container mx-auto">
               <h2 class="heading-large mb-6 text-undefined"
@@ -928,7 +849,7 @@
         </section>
 
         <!-- Localizacion mapa -->
-        <section class="flex-shrink-0" style="background-color: rgb(34, 51, 51);">
+        <section id="localizacion" class="flex-shrink-0" style="background-color: rgb(34, 51, 51);">
           <div class="container mx-auto py-12 lg:py-14 xl:py-20">
             <div class="flex flex-col w-full gap-10 lg:gap-20 lg:!flex-row-reverse">
               <div class="w-full md:w-1/2">
@@ -953,41 +874,12 @@
                     </div>
                     <div class="leaflet-pane leaflet-shadow-pane"></div>
                     <div class="leaflet-pane leaflet-overlay-pane"></div>
-                    <!-- <div class="leaflet-pane leaflet-marker-pane"><img
-                        src="https://api.mapbox.com/v4/marker/pin-m+da280f.png?access_token=pk.eyJ1IjoiZHVyYWJsZSIsImEiOiJjbGJjOHV1bHUwcjM5M3huOHdoZXdkdDRsIn0.geBkTZ4KBXWb669GQBr8rw"
-                        class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0"
-                        style="margin-left: -15px; margin-top: -35px; width: 40px; height: 70px; transform: translate3d(288px, 192px, 0px); z-index: 192;">
-                    </div> -->
                     <div class="leaflet-pane leaflet-tooltip-pane"></div>
                     <div class="leaflet-pane leaflet-popup-pane"></div>
                     <div class="leaflet-proxy leaflet-zoom-animated"
                       style="transform: translate3d(70px, -25px, 0px) scale(65536);"></div>
                   </div>
                   <div class="leaflet-control-container">
-                    <!-- <div class="leaflet-top leaflet-left">
-                      <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in"
-                          href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a
-                          class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
-                          aria-label="Zoom out">−</a></div>
-                    </div> -->
-                    <!-- <div class="leaflet-top leaflet-right">
-                      <div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a
-                          class="close" href="#" title="close">close</a>
-                        <div class="map-tooltip-content"></div>
-                      </div>
-                    </div> -->
-                    <!-- <div class="leaflet-bottom leaflet-left">
-                      <div class="mapbox-logo leaflet-control mapbox-logo-true"></div>
-                    </div>
-                    <div class="leaflet-bottom leaflet-right">
-                      <div class="map-legends wax-legends leaflet-control" style="display: none;"></div>
-                      <div class="leaflet-control-attribution leaflet-control leaflet-compact-attribution"><a
-                          href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox">© Mapbox</a> <a
-                          href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap">©
-                          OpenStreetMap</a> <a class="mapbox-improve-map"
-                          href="https://www.mapbox.com/contribute/#/-102.553/23.635/17" target="_blank"
-                          title="Improve this map">Improve this map</a></div>
-                    </div> -->
                   </div>
                 </div>
               </div>
