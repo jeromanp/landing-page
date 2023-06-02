@@ -60,7 +60,7 @@
 }
 
 #radio1:checked ~ .first {
-  margin-left: 0;
+  margin-left: 2%;
 }
 
 #radio2:checked ~ .first {
