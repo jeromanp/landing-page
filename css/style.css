@@ -45,22 +45,21 @@
 }
 
 .arrow-prev {
-  left: 80px;
+  left: 20px;
 }
 
 .arrow-next {
-  right: 80px;
+  right: 20px;
 }
 
-.arrow svg {
+.arrow img {
   width: 30px;
   height: 30px;
   transition: transform 0.3s ease;
 }
 
-.arrow:hover svg {
-  transform: scale(1.2);
-  fill: #ff0000; /* Cambia el color de relleno al hacer hover */
+.arrow:hover img {
+  transform: scale(1.3);
 }
 
 
